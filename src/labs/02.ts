@@ -7,3 +7,11 @@ console.log("check a", a);
 let ArrayString: string[] = ["a", "b", "c"];
 ArrayString.push("abc");
 console.log("check array type string", ArrayString);
+
+// tự động nhận kiểu
+let n = 10;
+console.log("nhan kieu number", n);
+// nhan string and number
+let array = ["abc", "def", 90];
+array.push(12);
+console.log("nhan kieu string and number", array);
