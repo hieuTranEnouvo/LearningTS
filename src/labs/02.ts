@@ -15,3 +15,7 @@ console.log("nhan kieu number", n);
 let array = ["abc", "def", 90];
 array.push(12);
 console.log("nhan kieu string and number", array);
+
+//hien ra ""
+let abc = 'Eric and "Hello"';
+console.log("check abc", abc);
