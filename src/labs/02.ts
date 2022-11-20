@@ -11,6 +11,7 @@ console.log("check array type string", ArrayString);
 // tự động nhận kiểu
 let n = 10;
 console.log("nhan kieu number", n);
+
 // nhan string and number
 let array = ["abc", "def", 90];
 array.push(12);
@@ -21,3 +22,14 @@ let abc = 'Eric and "Hello"';
 let abcd = `Eric and "Hello"`;
 console.log("check abc", abc);
 console.log("check abc", abcd);
+
+// nôí chuỗi
+let ay = "ahaha";
+let by = `b ${ay}`;
+console.log("noi chuoi", by);
+
+// boolean
+let aaa: boolean = Boolean("test");
+let bbb: boolean = Boolean("");
+console.log("check boolean", aaa); // true
+console.log("check boolean", bbb); // false
