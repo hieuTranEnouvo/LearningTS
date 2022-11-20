@@ -18,4 +18,6 @@ console.log("nhan kieu string and number", array);
 
 //hien ra ""
 let abc = 'Eric and "Hello"';
+let abcd = `Eric and "Hello"`;
 console.log("check abc", abc);
+console.log("check abc", abcd);
