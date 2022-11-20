@@ -33,3 +33,22 @@ let aaa: boolean = Boolean("test");
 let bbb: boolean = Boolean("");
 console.log("check boolean", aaa); // true
 console.log("check boolean", bbb); // false
+
+//object
+let pro: {
+  name: string;
+  age: number;
+} = {
+  name: "hieutran",
+  age: 12,
+};
+// c2
+let pro1: {
+  name: string;
+  age: number;
+};
+pro1 = {
+  name: "hieutran",
+  age: 12,
+};
+console.log("object", pro);
