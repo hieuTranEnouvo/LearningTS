@@ -52,3 +52,9 @@ pro1 = {
   age: 12,
 };
 console.log("object", pro);
+
+//array
+let testArray = ["hieutran", 23];
+testArray.push("hey");
+testArray.push(2);
+console.log("test array", testArray);
