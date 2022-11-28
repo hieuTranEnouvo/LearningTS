@@ -58,3 +58,12 @@ let testArray = ["hieutran", 23];
 testArray.push("hey");
 testArray.push(2);
 console.log("test array", testArray);
+
+//tuple array (dataType/size/order)
+let testTuple = ["hieutran", 23];
+let testTuple1: [boolean, string, number];
+testTuple1 = [true, "hello", 12];
+
+//optional number? dat cuoi
+let optionalTuple: [boolean, string, number?];
+optionalTuple = [true, "hello", 12];
