@@ -67,3 +67,12 @@ testTuple1 = [true, "hello", 12];
 //optional number? dat cuoi
 let optionalTuple: [boolean, string, number?];
 optionalTuple = [true, "hello", 12];
+
+// enum ==> giong constant nhưng chúngg ta sẽ khai báo đúng phần tử
+export enum LocalStorage {
+  USER_INFORMATION = "user-information",
+  PROFILE_INFORMATION = "profile-information",
+}
+
+let a1 = LocalStorage.USER_INFORMATION;
+let a2 = LocalStorage.PROFILE_INFORMATION;
