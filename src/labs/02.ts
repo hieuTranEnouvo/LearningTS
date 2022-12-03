@@ -76,3 +76,7 @@ export enum LocalStorage {
 
 let a1 = LocalStorage.USER_INFORMATION;
 let a2 = LocalStorage.PROFILE_INFORMATION;
+
+// any
+let testAny: any = "abc";
+testAny = 1234;
