@@ -77,6 +77,46 @@ export enum LocalStorage {
 let a1 = LocalStorage.USER_INFORMATION;
 let a2 = LocalStorage.PROFILE_INFORMATION;
 
-// any
+// any: trả về bất cứ thứ gì (áp dụng cho function and variable)
 let testAny: any = "abc";
 testAny = 1234;
+
+// function tra ve gia tri
+const sum = (a: number, b: number): number => {
+  return a + b;
+};
+
+// void: function k tra ve gia tri luu ve db, ko cần keyword return áp dụng cho function
+const handleLogs = (message: string): void => {
+  console.log("message: " + message);
+};
+
+// never ko bao giờ trả về giá trị promise!
+// k trả ra gì cả để xử lý lỗi
+function handleException(errorMessage: string): never {
+  throw Error(errorMessage);
+}
+//chạy k có điểm dừng
+function runInfinity(): void {
+  // while (true) {
+  //   console.log("test");
+  // }
+}
+let a232 = runInfinity();
+console.log("check log a", a232); // ko show log vì ko chạy đc tới hàm này
+// void sẽ trả ra undefined
+// nerver sẽ k trả ra gì
+
+//union type
+function addNumberOrString(
+  a: number | string | object | boolean,
+  b: number | string | object | boolean
+) {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  }
+  if (typeof a === "string" && typeof b === "string") {
+    return a + b;
+  }
+  throw new Error("Parameters must be a number or string");
+}
