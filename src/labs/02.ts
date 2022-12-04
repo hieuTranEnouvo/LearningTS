@@ -107,11 +107,9 @@ console.log("check log a", a232); // ko show log vì ko chạy đc tới hàm n�
 // void sẽ trả ra undefined
 // nerver sẽ k trả ra gì
 
-//union type
-function addNumberOrString(
-  a: number | string | object | boolean,
-  b: number | string | object | boolean
-) {
+//union and aliases type
+type ericType = number | string | object | boolean; //aliases type
+function addNumberOrString(a: ericType, b: ericType) {
   if (typeof a === "number" && typeof b === "number") {
     return a + b;
   }
